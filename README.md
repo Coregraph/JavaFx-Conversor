@@ -7,27 +7,30 @@ Siga los pasos a Continuación.
 # Pasos:
 
 1. Cree un nuevo proyecto Netbeans como se muestra a continuación.
-  //img 0
-  //img 1
+  ![imagen 0](./img/tut_0.PNG)
+  ![imagen 1](./img/tut_1.PNG)
 
 2. Ejecute el programa y verifique el ejemplo JavaFx muestra la siguiente ventana.
-  //img 2
+  ![imagen 2](./img/tut_2.PNG)
 
   _Nota:_ Si al ejecutar el proyecto presenta algun error, sobre el proyecto de netbeans haga click derecho y luego propiedades y configure el proyecto de la siguiente manera:
-  //img 3
+  ![imagen 3](./img/tut_3.PNG)
 
 3. Desde el Scene builder modifique el archivo .fxml del proyecto Netbeans para que se paresca a la siguiente interfaz:
-  //img 4
+  ![imagen 4](./img/tut_4.PNG)
+  
   Se recomienda utlizar la siguiente jerarquia de componentes:
-  //img 5
+  
+  ![imagen 5](./img/tut_5.PNG)
+  
   Los radio button estan contenidos en un componente llamado Group. En dicho grupo es posible obtener el boton seleccionado (recuerde seleccionar un solo boton como predeterminado).
-  Recuerde asignarle 
 
 4. A continuación asigne los fxid´s correspondientes a todos los componentes como botones, labels, radio button, group. Recuerde utilizar nombres coherentes al proposito de dichos componentes gráficos.
 
 5. Desde el scene builder genere el codigo base del controlador (View/Show Sample Controller Skeleton), copie los nombres de los componentes y peguelos en el controlador del proyecto de netbeans.
-  //img 6 
-  //img 7
+  ![imagen 6](./img/tut_6.PNG)
+  ![imagen 7](./img/tut_7.PNG)
+  
   _Nota:_ verifique en el Scene Builder que la interfaz este relacionada al controlador como se muestra a continuacion
 
 6. En en Scene builder asigne al boton el handler ```handleCalcularDivisa``` y luego en Netbeans en el controlador cree el siguiente evento de código:
@@ -53,10 +56,12 @@ Siga los pasos a Continuación.
 8. Ejecute el programa y pruebe su funcionamiento.
 
 9. En la segunda pestaña ejecute el mismo proceso para crear en la segunda pestaña un conversor de tempratura:
-  //img 8
+  ![imagen 8](./img/tut_8.PNG)
+  
   Para lo cual siga la siguiente referencia:
   - 1 grado C es igual a 33.8 grados F o 274.15 grados K
   - 1 grado K es igual a -457.87 grados F o -272.15 grados C
   - 1 grade F es igual a -17.2 grados C o 255.9 grados K
-  Para realizar este proceso se sugiere manejar este enveto mediante un nuevo handler (se debe incluir el handler en el mismo controlador). 
+  
+  Para realizar este proceso se sugiere manejar este evento mediante un nuevo handler (se debe incluir el handler en el mismo controlador). 
   
