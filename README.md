@@ -1,6 +1,8 @@
-# JavaFx-Conversor
+﻿# JavaFx-Conversor
 
 Para el siguiente Taller puede utilizar el archivo ```.fxml``` como referencia que se encuentra en este repositorio.
+
+![App](./img/app.PNG)
 
 Siga los pasos a Continuación.
 
