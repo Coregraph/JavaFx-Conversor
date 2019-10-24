@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="conversor.VentanaPrincipalController">
+  <tabs>
+    <Tab text="Divisas">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="410.0" prefWidth="600.0">
+               <children>
+                  <TextField fx:id="divOrig" layoutX="24.0" layoutY="105.0" promptText="Divisa Inicial" />
+                  <Label layoutX="24.0" layoutY="76.0" text="1. Digite el valor de la divisa de origen:" />
+                  <Label layoutX="173.0" layoutY="14.0" text="Conversor de Divisas" textAlignment="CENTER" textFill="#b90303">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Group layoutX="193.0" layoutY="109.0">
+                     <children>
+                        <RadioButton fx:id="orig_usd" mnemonicParsing="false" text="Dolar">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="orig" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="orig_eur" layoutX="84.0" mnemonicParsing="false" text="Euro" toggleGroup="$orig" />
+                        <RadioButton fx:id="orig_cop" layoutX="166.0" mnemonicParsing="false" selected="true" text="Peso Colombiano" toggleGroup="$orig" />
+                     </children>
+                  </Group>
+                  <Separator layoutX="-5.0" layoutY="140.0" prefHeight="12.0" prefWidth="611.0" />
+                  <Label layoutX="24.0" layoutY="169.0" text="2. Seleccione la Divisa de Destino" />
+                  <Group layoutX="24.0" layoutY="202.0">
+                     <children>
+                        <RadioButton fx:id="dest_usd" mnemonicParsing="false" selected="true" text="Dolar">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="dest" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="dest_eur" layoutX="84.0" mnemonicParsing="false" text="Euro" toggleGroup="$dest" />
+                        <RadioButton fx:id="dest_cop" layoutX="166.0" mnemonicParsing="false" text="Peso Colombiano" toggleGroup="$dest" />
+                     </children>
+                  </Group>
+                  <Button fx:id="botonCalcular" layoutX="499.0" layoutY="234.0" mnemonicParsing="false" onAction="#handleCalcularDivisa" text="Calcular">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Separator layoutY="283.0" prefHeight="1.0" prefWidth="608.0" />
+                  <Label fx:id="resultadoDivisa" layoutX="36.0" layoutY="305.0" prefHeight="39.0" prefWidth="536.0" textAlignment="CENTER" textFill="#108d3c">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Temperatura">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
