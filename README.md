@@ -28,6 +28,8 @@ Siga los pasos a Continuación.
   Los radio button estan contenidos en un componente llamado Group. En dicho grupo es posible obtener el boton seleccionado (recuerde seleccionar un solo boton como predeterminado).
 
 4. A continuación asigne los fxid´s correspondientes a todos los componentes como botones, labels, radio button, group. Recuerde utilizar nombres coherentes al proposito de dichos componentes gráficos.
+  En los radio buttons asigne el toggleGroup correspondiente, al hacer esto a un conjunto de radio buttons solo se le puede seleccionar un unico botón.
+  ![imagen 5_2](./img/tut_5_2.PNG)
 
 5. Desde el scene builder genere el codigo base del controlador (View/Show Sample Controller Skeleton), copie los nombres de los componentes y peguelos en el controlador del proyecto de netbeans.
   ![imagen 6](./img/tut_6.PNG)
@@ -42,6 +44,8 @@ Siga los pasos a Continuación.
 
   }
   ```
+  ![imagen 7_2](./img/tut_7_2.PNG)
+
 7. En dicho método implemente la funcionalidad de conversion de un valor escrito por el usuario en el textBox y la selección de Dolar/Euro/Peso. Para lo cual puede usar la siguiente escala de referencia
   - Un Dolar es 0.90 Euros o 3423 Pesos
   - Un Euro es 1.1 Dolares o 3809 Pesos
