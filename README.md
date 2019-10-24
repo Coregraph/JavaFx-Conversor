@@ -49,7 +49,7 @@ Siga los pasos a Continuación.
   
   Para conocer el valor de un grupo puede utilizar el siguiente fragmento de código (recuerde que tanto el grupo como los radio buttons deben tener un fxid):
   ```
-  if(grupo.getSelectedToggle().equals(radio_button)){
+  if(toggle_group.getSelectedToggle().equals(radio_button)){
   
   }
   ```
